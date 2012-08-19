@@ -28,7 +28,7 @@
 
 u32 load_binary(const char *fn, u8 *buf, u32 bufsize)
 {
-    fprintf(stderr, "emulino: Loading binary image: %s\n", fn);
+    fprintf(stderr, "altoyduino: Loading binary image: %s\n", fn);
     FILE *f = fopen(fn, "rb");
     if (f == NULL) {
         perror(fn);
@@ -41,7 +41,7 @@ u32 load_binary(const char *fn, u8 *buf, u32 bufsize)
 
 u32 load_hex(const char *fn, u8 *buf, u32 bufsize)
 {
-    fprintf(stderr, "emulino: Loading hex image: %s\n", fn);
+    fprintf(stderr, "altoyduino: Loading hex image: %s\n", fn);
     FILE *f = fopen(fn, "r");
     if (f == NULL) {
         return 0;

@@ -5,3 +5,5 @@
 avr.inc
 emulino
 emulino.eeprom
+.DS_*
+altoyduino
