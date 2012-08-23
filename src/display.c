@@ -34,7 +34,7 @@ static void DrawPixel(SDL_Surface *screen, int x, int y, Uint8 R, Uint8 G, Uint8
 {
     if (x>DISPLAY_WIDTH-1 || x<0) return;
     if (y>DISPLAY_HEIGHT-1 || y<0) return;
-    SDL_Rect rect = {x*scale,y*scale,scale,scale};
+    SDL_Rect rect = {x*scale,y*scale,scale-1,scale-1};
     SDL_FillRect(screen, &rect, SDL_MapRGB(screen->format, R, G, B));
 }
 
